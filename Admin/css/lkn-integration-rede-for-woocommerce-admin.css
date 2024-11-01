@@ -1,0 +1,95 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+.lowOpacity {
+    opacity: 0.5;
+}
+
+textarea:disabled {
+    resize: none;
+}
+
+.lknIntegrationRedeForWoocommerceTooltiptext {
+    visibility: hidden;
+    padding: 0.618em 1em;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    font-size: .8em;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+    position: absolute;
+    z-index: 1;
+    transform: translateX(57%);
+    margin-left: -100px;
+    margin-top: 17px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-weight: normal
+}
+
+#lknIntegrationRedeForWoocommerceTooltipSpan:hover+.lknIntegrationRedeForWoocommerceTooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.lknIntegrationRedeForWoocommerceBecomePRO {
+    text-decoration: none;
+    color: #FF0D08;
+    font-size: 0.84rem;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+}
+
+.lknIntegrationRedeForWoocommerceBecomePRO:hover {
+    color: #FF0D08;
+}
+
+#lknIntegrationRedeForWoocommerceSettingsLayoutDiv{
+    padding: 10px 24px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+#lknIntegrationRedeForWoocommerceSettingsLayoutMenu{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 40px;
+    font-size: xx-large;
+    color: #101111;
+    margin-bottom: 20px;
+}
+
+#lknIntegrationRedeForWoocommerceSettingsLayoutMenu p{
+    font-size: x-large;
+    font-weight: bold;
+    margin: 0;
+    height: 100%;
+    padding: 4px 30px 0px 30px;
+    /* background-color: #CCCCCC; */
+}
+
+#lknIntegrationRedeForWoocommerceSettingsLayoutMenu p.active{
+    background-color: #CCCCCC;
+}
+
+#lknIntegrationRedeForWoocommerceSettingsLayoutMenu a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+#lknIntegrationRedeForWoocommerceSettingsLayoutMenu {
+    border-bottom: 2px solid #CCCCCC;
+}
+
+
+@media (max-width: 782px) {
+    .lknIntegrationRedeForWoocommerceTooltiptext {
+        transform: translateX(-20%);
+        margin-left: 0px;
+    }
+}
